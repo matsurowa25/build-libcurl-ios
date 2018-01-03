@@ -24,18 +24,18 @@ function build_for_arch() {
   ./configure --disable-shared --without-zlib --enable-static --enable-ipv6 ${SSL_FLAG} --host="${HOST}" --prefix=${PREFIX} && make -j8 && make install
 }
 
-if [ "$1" == "openssl" ]
-then
+# if [ "$1" == "openssl" ]
+# then
   if [ ! -d ${HOME}/openssl-ios-dist ]
   then
     echo "Please use https://github.com/matsurowa25/OpenSSL-for-iPhone to build OpenSSL for iOS first"
     exit 8
   fi
   export SSL_FLAG=--with-ssl=${HOME}/openssl-ios-dist
-else
-  check_curl_ver
-  export SSL_FLAG=--with-darwinssl
-fi
+# else
+#   check_curl_ver
+#   export SSL_FLAG=--with-darwinssl
+# fi
 
 TMP_DIR=/tmp/build_libcurl_$$
 
