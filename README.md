@@ -18,7 +18,7 @@ cd curl-7.56.1
 curl https://raw.githubusercontent.com/matsurowa25/build-libcurl-ios/master/build_libcurl_dist.sh |bash
 ......
 ```
-Find the result libcurl-ios-dist on your desktop.
+Find the result libcurl-ios-dist on your home.
 
 
 OpenSSL
