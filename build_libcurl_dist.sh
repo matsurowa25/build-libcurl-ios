@@ -26,12 +26,12 @@ function build_for_arch() {
 
 if [ "$1" == "openssl" ]
 then
-  if [ ! -d ${HOME}/Desktop/openssl-ios-dist ]
+  if [ ! -d ${HOME}/openssl-ios-dist ]
   then
-    echo "Please use https://github.com/sinofool/build-openssl-ios/ to build OpenSSL for iOS first"
+    echo "Please use https://github.com/matsurowa25/OpenSSL-for-iPhone to build OpenSSL for iOS first"
     exit 8
   fi
-  export SSL_FLAG=--with-ssl=${HOME}/Desktop/openssl-ios-dist
+  export SSL_FLAG=--with-ssl=${HOME}/openssl-ios-dist
 else
   check_curl_ver
   export SSL_FLAG=--with-darwinssl
