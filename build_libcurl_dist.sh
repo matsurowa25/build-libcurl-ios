@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export DEVROOT=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
-DFT_DIST_DIR=${HOME}/Desktop/libcurl-ios-dist
+DFT_DIST_DIR=${HOME}/libcurl-ios-dist
 DIST_DIR=${DIST_DIR:-$DFT_DIST_DIR}
 
 function check_curl_ver() {
