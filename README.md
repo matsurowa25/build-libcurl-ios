@@ -7,14 +7,14 @@ OpenSSL and Darwin native ssl support.
   
 Script only, please download libcurl from here: http://curl.haxx.se/download.html  
 Tested Xcode 9.2 on macOS 10.12.6(Sierra) 
-Tested curl 7.56.1 
+Tested curl 7.57.0 
 
 Usage
 =================
 ```
-curl -O https://curl.haxx.se/download/curl-7.56.1.tar.gz
-tar xf curl-7.56.1.tar.gz
-cd curl-7.56.1
+curl -O https://curl.haxx.se/download/curl-7.57.0.tar.gz
+tar xf curl-7.57.0.tar.gz
+cd curl-7.57.0
 curl https://raw.githubusercontent.com/matsurowa25/build-libcurl-ios/master/build_libcurl_dist.sh |bash
 ......
 ```
