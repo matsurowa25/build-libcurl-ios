@@ -57,3 +57,6 @@ cp -r ${TMP_DIR}/arm64/include ${TMP_DIR}/
 mkdir -p ${DIST_DIR}
 cp -r ${TMP_DIR}/include ${TMP_DIR}/lib ${DIST_DIR}
 
+mkdir -p ${DIST_DIR}/bin
+cp -p curl-config ${DIST_DIR}/bin
+chmod 775 ${DIST_DIR}/bin/curl-config
